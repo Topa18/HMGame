@@ -75,6 +75,7 @@ def show_player_stat():
         scores_dict = json.loads(scores.read())
         for stat in scores_dict.items():
             print(stat,'\n')
+        return print("Back to menu\n")
 
 def ask_to_play_again():
     again = input(str("Want to play again?\nYes or no: "))
